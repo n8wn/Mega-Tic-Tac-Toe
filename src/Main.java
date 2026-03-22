@@ -77,7 +77,7 @@ public class Main {
     }
 
     // this should return X O DRAW, or "" for still in play
-    static String checkForWin(Board board) {
+    public static String checkForWin(Board board) {
         int[][] lines = {
                 {0,1,2}, {3,4,5}, {6,7,8},
                 {0,3,6}, {1,4,7}, {2,5,8},
@@ -105,7 +105,7 @@ public class Main {
     }
 
     // this should return X O DRAW, or "" for still in play
-    static String getSmallBoardResult(SmallBoard smallBoard) {
+    public static String getSmallBoardResult(SmallBoard smallBoard) {
         int[][] lines = {
                 {0,1,2}, {3,4,5}, {6,7,8},
                 {0,3,6}, {1,4,7}, {2,5,8},
@@ -125,7 +125,7 @@ public class Main {
         return "";
     }
 
-    static void printBoard(Board board, Cell current, int activeBoard) {
+    public static void printBoard(Board board, Cell current, int activeBoard) {
         System.out.println("\nCurrent player: " + current);
         if (activeBoard == -1) {
             System.out.println("Free choice — play in any open board.");
