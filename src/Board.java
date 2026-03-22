@@ -12,9 +12,12 @@ public class Board {
         }
     }
 
+    /*
     public List<SmallBoard> getBoard() {
         return board;
     }
+
+     */
 
     public SmallBoard getSmallBoard(int index) {
         return board.get(index);

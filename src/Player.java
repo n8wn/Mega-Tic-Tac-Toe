@@ -1,3 +1,3 @@
 public interface Player {
-    Move getMove(Board board);
+    Move getMove(Board board, int activeBoard);
 }

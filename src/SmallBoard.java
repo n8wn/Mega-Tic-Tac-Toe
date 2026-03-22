@@ -1,4 +1,3 @@
-// SmallBoard.java
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,5 +19,9 @@ public class SmallBoard {
 
     public void setCell(int index, Cell value) {
         cells.set(index, value);
+    }
+
+    public boolean isFull() {
+        return cells.stream().noneMatch(c -> c == Cell.EMPTY);
     }
 }
